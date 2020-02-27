@@ -1,0 +1,98 @@
+.imageUpload {
+    .el-upload--picture-card {
+        background-color: #fbfdff;
+        border: 1px dashed #c0ccda;
+        border-radius: 6px;
+        box-sizing: border-box;
+        width: 148px;
+        height: 148px;
+        cursor: pointer;
+        line-height: 146px;
+        vertical-align: top;
+        display: inline-block;
+        text-align: center;
+        outline: none;
+        overflow: hidden;
+        &:hover {
+            border-color: #26af61;
+        }
+    }
+    .el-upload-list--picture-card {
+        margin: 0;
+        display: inline;
+        vertical-align: top;
+        .el-upload-list__item {
+            position: relative;
+            cursor: move;
+            overflow: hidden;
+            background-color: #fff;
+            border: 1px solid #c0ccda;
+            border-radius: 6px;
+            box-sizing: border-box;
+            width: 148px;
+            height: 148px;
+            margin: 0 8px 8px 0;
+            display: inline-block;
+            &.isDrap {
+                border: 1px dashed #26af61;
+            }
+            .el-icon-error.btn {
+                position: absolute;
+                right: 5px;
+                top: 5px;
+                z-index: 1;
+                color: #26af61;
+            }
+        }
+    }
+    .uploader-layout {
+        display: flex;
+    }
+    .avatar-uploader {
+        height: auto;
+        .el-upload--picture-card {
+            width: 148px;
+            height: 148px;
+            line-height: 1.5;
+            font-size: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            .upload-tip {
+                display: flex;
+                align-items: center;
+                flex-flow: column;
+                color: #8c939d;
+                width: 100%;
+                &.progress {
+                    position: absolute;
+                    width: 400px;
+                    height: 100%;
+                    flex-flow: nowrap;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                }
+                .el-progress {
+                    width: 85%;
+                    margin: 0 10px 0 17px;
+                }
+            }
+            > div {
+                font-size: 14px;
+            }
+            .article-img {
+                line-height: 140px;
+                .image-slot {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            > i {
+                line-height: 148px;
+            }
+        }
+    }
+}

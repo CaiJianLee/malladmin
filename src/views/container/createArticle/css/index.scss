@@ -1,0 +1,122 @@
+.goods-created-layout {
+  margin-top: 13px;
+}
+.el-upload--picture-card {
+  background-color: #fbfdff;
+  border: 1px dashed #c0ccda;
+  border-radius: 6px;
+  box-sizing: border-box;
+  width: 148px;
+  height: 148px;
+  cursor: pointer;
+  line-height: 146px;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  outline: none;
+  overflow: hidden;
+  &:hover {
+    border-color: #26af61;
+  }
+}
+.el-upload-list--picture-card {
+  margin: 0;
+  display: inline;
+  vertical-align: top;
+  .el-upload-list__item {
+    position: relative;
+    cursor: move;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #c0ccda;
+    border-radius: 6px;
+    box-sizing: border-box;
+    width: 148px;
+    height: 148px;
+    margin: 0 8px 8px 0;
+    display: inline-block;
+    &.isDrap {
+      border: 1px dashed #26af61;
+    }
+    .el-icon-error.btn {
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      z-index: 1;
+      color: #26af61;
+    }
+  }
+}
+.uploader-layout {
+  display: flex;
+}
+.box {
+  max-height: 450px;
+  border: 1px solid red;
+  width: 70%;
+  margin: 20px auto;
+  padding: 10px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.from-layout {
+  .from-layout-title {
+    display: flex;
+    justify-content: space-between;
+    color: #26af61;
+    > div {
+      font-weight: bold;
+    }
+  }
+  .box-card {
+    margin-bottom: 20px;
+  }
+  .card-content {
+    transition: all 0.3s ease 0s;
+    padding: 30px 55px;
+    .demo-form-inline {
+      .el-form-item {
+        margin-right: 40px;
+      }
+    }
+    .goodsParams {
+      .goodsParams-title {
+        font-size: 14px;
+        color: #333;
+        font-weight: bold;
+        padding-left: 60px;
+        margin-bottom: 20px;
+      }
+      .goodsParams-content {
+        display: flex;
+      }
+    }
+  }
+  .from-operation {
+    display: flex;
+    justify-content: flex-end;
+    .el-button {
+      margin-left: 30px;
+    }
+  }
+}
+.goodsInfoView {
+  max-height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.fullScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: #fff;
+}
+.form-titles {
+  //padding-left: 50px;
+  margin-bottom: 30px;
+  line-height: 1;
+  font-weight: bold;
+  font-size: 16px;
+}

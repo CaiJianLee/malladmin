@@ -1,0 +1,48 @@
+.videoUpload {
+    .uploader-layout {
+        display: flex;
+    }
+    .avatar-uploader {
+        height: auto;
+        .el-upload--picture-card {
+            width: 400px;
+            height: auto;
+            min-height: 140px;
+            line-height: 1.5;
+            font-size: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            .upload-tip {
+                display: flex;
+                align-items: center;
+                flex-flow: column;
+                color: #8c939d;
+                width: 100%;
+                &.progress {
+                    position: absolute;
+                    width: 400px;
+                    height: 100%;
+                    flex-flow: nowrap;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                }
+                .el-progress {
+                    width: 85%;
+                    margin: 0 10px 0 17px;
+                }
+            }
+            > div {
+                font-size: 14px;
+            }
+            .article-img {
+                line-height: 140px;
+            }
+            > i {
+                line-height: 148px;
+            }
+        }
+    }
+}

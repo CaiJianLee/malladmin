@@ -1,0 +1,217 @@
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+body, *  {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100%;
+}
+a {
+  font-weight: bold;
+  color: #2c3e50;
+
+  &.router-link-exact-active {
+    color: #42b983;
+  }
+}
+li, ul, ol {
+  list-style: none;
+}
+#app {
+  font-family: "Microsoft YaHei","微软雅黑",Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  height: 100%;
+  .el-main.page-content.min-scrollbar {
+    padding: 20px;
+  }
+}
+.btn {
+  cursor: pointer;
+  &:hover {
+    color: #26af61;
+  }
+}
+.el-image-viewer__close {
+  > i {
+    color: #fff;
+  }
+}
+//button 鼠标移入样式
+.el-button--primary:focus {
+  background-color: #26AF61;
+}
+.el-button--primary:active {
+  border-color: #51BF81;
+}
+.el-button--primary:hover {
+  background-color: #51BF81;
+}
+.el-card__body {
+  padding: 15px 30px;
+}
+.el-progress-bar__innerText {
+  vertical-align: baseline;
+}
+/*修改滚动条样式*/
+::-webkit-scrollbar{
+  width: 8px;
+  height: 8px;
+}
+//滚动条轨道
+::-webkit-scrollbar-track{
+  background: rgb(239, 239, 239);
+}
+//滚动条滑块
+::-webkit-scrollbar-thumb{
+  background: #bfbfbf;
+  border-radius: 10px;
+  transition: background .3s ease 0s;
+  -webkit-transition: background .3s ease 0s;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #333;
+}
+::-webkit-scrollbar-corner{
+  background: rgb(239, 239, 239);
+}
+.el-container.is-vertical {
+  background-color: #f5f6f9;
+}
+//弹框样式
+.el-message-box {
+  padding-bottom: 30px;
+  .el-message-box__header {
+    border-bottom: 1px solid #eeeeee ;
+    padding: 18px 15px 18px;
+    text-align: left;
+    .el-message-box__title {
+      font-weight: bold;
+    }
+    .el-message-box__headerbtn {
+      font-size: 18px;
+      font-weight: bolder;
+      > .el-message-box__close {
+        font-weight: bolder;
+      }
+    }
+  }
+  .el-message-box__content {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .el-message-box__input {
+      width:270px !important;
+    }
+    .el-message-box__message {
+      > p {
+        color: #333;
+        font-weight: bold;
+      }
+    }
+  }
+  .el-message-box__btns {
+    //text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    .el-button {
+      padding: 12px 55px;
+      margin-left: 20px;
+    }
+  }
+}
+.el-breadcrumb {
+  font-size: 24px;
+}
+.el-breadcrumb__inner.is-link {
+  font-weight: normal;
+  color: #999999;
+}
+.el-breadcrumb__item:last-child .el-breadcrumb__inner {
+  color: #333 !important;
+}
+//页面头部样式
+.layout-title-box {
+  //margin-top: 10px;
+  .titles {
+    color: #333333;
+    font-size: 24px;
+    line-height: 1;
+  }
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.layout-title-box.layout-title-filter {
+  .filter {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    .filter-item {
+      margin-right: 40px;
+      > label {
+        margin-right: 20px;
+      }
+      &.btnItem {
+        margin-right: 20px;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+.el-dialog__header {
+  border-bottom: 1px solid #eee;
+
+  .el-dialog__title {
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+  }
+
+  .el-dialog__headerbtn {
+    font-size: 18px;
+
+    >.el-dialog__close {
+      font-weight: bolder;
+    }
+  }
+}
+.el-dialog__footer {
+  text-align: center;
+
+  .dialog-footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+
+    .el-button {
+      width: 136px;
+      height: 38px;
+      font-size: 14px;
+    }
+
+    .el-button.el-button--primary {
+      margin-right: 20px;
+    }
+  }
+}
+.el-card {
+  border: 0;
+}
+.tip-text {
+  font-size: 12px;
+  color: #999999;
+}
+.tooltip {
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}

@@ -1,0 +1,45 @@
+.from-layout {
+  .el-form-item {
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .el-form-item__label {
+      font-size: 14px;
+      color: #333333;
+      font-weight: bold;
+    }
+    .el-form-item__content {
+      .el-input {
+        .el-input__suffix {
+          color: #26af61;
+        }
+      }
+      .tip-text {//最多上传5张尺寸文字跟上传框对齐
+        margin-left: 72px;
+      }
+      .el-form-item__error {
+        padding-left: 80px;
+      }
+    }
+  }
+  .el-card__header {
+    padding: 20px 30px;
+  }
+  .el-card__body {
+    padding: 0;
+  }
+}
+.goodsInfoView-box {
+  .el-dialog__headerbtn .el-dialog__close {
+    font-size: 22px;
+  }
+}
+.goodsParams {//参数名称flex布局
+  .goodsParams-content {
+    .el-form-item {
+      display: flex;
+      margin-right: 40px;
+    }
+  }
+}
